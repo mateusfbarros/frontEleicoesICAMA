@@ -1,0 +1,37 @@
+<!-- <div class="container">
+  <div class="content">
+    <mat-card class="mat-elevation-z8">
+      <mat-card-header> </mat-card-header>
+    </mat-card>
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="content">
+    <button
+      style="text-align: center; margin-top: 4%"
+      mat-raised-button
+      (click)="cadastrar()"
+    >
+      INSERIR NOVO VOTO
+    </button>
+  </div>
+</div>
+
+<div class="container-2">
+  <mat-card class="mat-elevation-z8">
+    <div
+      class="content-2"
+      style="display: flex; justify-content: center; align-items: center"
+    >
+      <div *ngFor="let item of candidatos">
+        <div style="text-align: center; padding: 2rem">
+          <img mat-card-image src="{{ item.foto }}" />
+          <p>Nome: {{ item.nome }}</p>
+          <p>Número: {{ item.numero }}</p>
+          <p>Votos: {{ item.votos }}</p>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+</div>

@@ -1,0 +1,143 @@
+form {
+  width: 20%;
+  margin: 2rem auto 0 auto;
+  text-align: center;
+}
+
+.form {
+  width: 100%;
+}
+.buttons-1 {
+  width: 100%;
+  text-align: center;
+  width: 300px;
+  right: 20px;
+}
+.buttons-2 {
+  text-align: center;
+  width: 300px;
+  right: 20px;
+}
+
+.numero-candidato {
+  width: 50%;
+  text-align: center;
+}
+
+.p-number {
+  padding: 15px;
+  font-size: 40px;
+}
+
+button {
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+/* .container {
+  text-align: center;
+  margin-top: 15em;
+  width: 100%;
+  position: absolute;
+} */
+img {
+  width: 105px;
+}
+.cinzaEscuro {
+  top: 50%;
+  margin-top: -200px;
+  width: 250px;
+  height: 60px;
+  right: 20px;
+  position: absolute;
+}
+b {
+  position: relative;
+  top: 10px;
+}
+.preto {
+  border: solid 2px;
+  top: 50%;
+  margin-top: -135px;
+  position: absolute;
+  background-color: #444;
+  width: 300px;
+  right: 20px;
+}
+.cinzaClaro {
+  position: absolute;
+  border: solid 1px;
+  left: 50%;
+  margin-left: -370px;
+  top: 50%;
+  margin-top: -190px;
+  position: absolute;
+  height: 350px;
+  width: 500px;
+  background-color: snow;
+}
+.cinzaEscuro {
+  background-color: #b6b5b5;
+}
+.bnt {
+  margin: 10px;
+  background-color: black;
+  color: snow;
+  border-radius: 5px;
+  height: 30px;
+  width: 50px;
+}
+.teclado2 {
+  font-size: 11px;
+  position: absolute;
+  bottom: 20px;
+  left: 5px;
+  color: black;
+}
+.laranja {
+  background-color: #e67401;
+  color: white;
+}
+.verde {
+  background-color: green;
+  color: white;
+}
+
+mat-card {
+  margin-top: 2rem;
+  padding: 0.8rem;
+}
+
+.content {
+  width: 100%;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.container-2 {
+  width: 60%;
+  margin: auto;
+}
+
+.content-2 {
+  width: 100%;
+}
+
+.button-black {
+  background-color: black;
+  color: white;
+}
+
+.div-espaço {
+  width: 23rem;
+}
+
+.button-footer {
+  margin-top: 1rem;
+  margin-left: 3rem;
+}

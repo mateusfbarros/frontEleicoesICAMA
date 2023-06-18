@@ -1,0 +1,133 @@
+<form action="">
+  <div class="forms">
+    <mat-form-field class="form">
+      <mat-label>Matrícula:</mat-label>
+      <input
+        [(ngModel)]="calcme.matricula"
+        id="nome"
+        name="calcme.matricula"
+        matInput
+        placeholder="Matrícula"
+        maxlength="9"
+      />
+    </mat-form-field>
+    <!-- <mat-form-field class="form">
+      <mat-label>Email:</mat-label>
+      <input
+        [(ngModel)]="calcme.email"
+        id="email"
+        name="calcme.email"
+        type="email"
+        matInput
+        placeholder="exemplo@email.com"
+      />
+    </mat-form-field>
+    <mat-form-field class="form">
+      <mat-label>Telefone:</mat-label>
+      <input
+        [(ngModel)]="calcme.telefone"
+        id="telefone"
+        name="calcme.telefone"
+        type="tel"
+        matInput
+        placeholder="(00) 90000-0000"
+        mask="(00) 00000-0000"
+      />
+    </mat-form-field> -->
+  </div>
+
+  <!-- <div class="buttons-1">
+    <button (click)="create()" mat-raised-button color="primary">ENVIAR</button>
+    <button (click)="listagem()" mat-raised-button color="warn">
+      LISTAGEM
+    </button>
+  </div> -->
+</form>
+<div class="container">
+  <div class="content">
+    <mat-card class="mat-elevation-z8">
+      <mat-card-header>
+        <div class="numero-candidato">
+          <p class="p-number">{{ campo1 }}</p>
+          <div *ngFor="let item of candidatos" style="margin-top: 2rem">
+            <div *ngIf="campo1 == item.numero">
+              <img mat-card-image src="{{ item.foto }}" />
+              <p>{{ item.nome }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="buttons-2">
+          <div>
+            <button (click)="inserir(1)" mat-raised-button class="button-black">
+              1
+            </button>
+            <button (click)="inserir(2)" mat-raised-button class="button-black">
+              2
+            </button>
+            <button (click)="inserir(3)" mat-raised-button class="button-black">
+              3
+            </button>
+            <button (click)="inserir(4)" mat-raised-button class="button-black">
+              4
+            </button>
+            <button (click)="inserir(5)" mat-raised-button class="button-black">
+              5
+            </button>
+            <button (click)="inserir(6)" mat-raised-button class="button-black">
+              6
+            </button>
+            <button (click)="inserir(7)" mat-raised-button class="button-black">
+              7
+            </button>
+            <button (click)="inserir(8)" mat-raised-button class="button-black">
+              8
+            </button>
+            <button (click)="inserir(9)" mat-raised-button class="button-black">
+              9
+            </button>
+            <button (click)="inserir(0)" mat-raised-button class="button-black">
+              0
+            </button>
+          </div>
+          <div style="display: flex; flex-direction: row">
+            <div class="button-footer">
+              <button
+                (click)="corrige()"
+                mat-raised-button
+                class="laranja"
+                style="padding: 10px"
+              >
+                CANCELAR
+              </button>
+              <button
+                (click)="verificaVotoExistente()"
+                mat-raised-button
+                class="verde"
+                style="padding: 10px"
+              >
+                CONFIRMAR
+              </button>
+            </div>
+          </div>
+        </div>
+      </mat-card-header>
+    </mat-card>
+  </div>
+</div>
+
+<div class="container-2">
+  <mat-card class="mat-elevation-z8">
+    <div
+      class="content-2"
+      style="display: flex; justify-content: center; align-items: center"
+    >
+      <div *ngFor="let item of candidatos">
+        <div style="text-align: center; padding: 2rem">
+          <img mat-card-image src="{{ item.foto }}" />
+          <p>Nome: {{ item.nome }}</p>
+          <p>Número: {{ item.numero }}</p>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+</div>
